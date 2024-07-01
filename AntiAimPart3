@@ -1,2 +1,2 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/pwrsk/Library/main/AntiAimPart1"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/pwrsk/Library/main/AntiAimPart2"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/pwrsk/Library/main/AntiAimPart1"))()
