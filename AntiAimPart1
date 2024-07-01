@@ -1,0 +1,72 @@
+local humanoid = game.Players.LocalPlayer.Character:WaitForChild("Humanoid")
+local emoteId = 10714360343
+
+local function playEmote()
+    local animation = Instance.new("Animation")
+    animation.AnimationId = "rbxassetid://"..tostring(emoteId)
+    local loadedAnimation = humanoid:LoadAnimation(animation)
+    loadedAnimation:Play()
+end
+
+playEmote()
+local humanoid = game.Players.LocalPlayer.Character:WaitForChild("Humanoid")
+local emoteId = 10714360343
+
+local function playEmote()
+    local animation = Instance.new("Animation")
+    animation.AnimationId = "rbxassetid://"..tostring(emoteId)
+    local loadedAnimation = humanoid:LoadAnimation(animation)
+    loadedAnimation:Play()
+end
+
+playEmote()
+local humanoid = game.Players.LocalPlayer.Character:WaitForChild("Humanoid")
+local emoteId = 10714360343
+
+local function playEmote()
+    local animation = Instance.new("Animation")
+    animation.AnimationId = "rbxassetid://"..tostring(emoteId)
+    local loadedAnimation = humanoid:LoadAnimation(animation)
+    loadedAnimation:Play()
+end
+
+playEmote()
+local humanoid = game.Players.LocalPlayer.Character:WaitForChild("Humanoid")
+local emoteId = 10714360343
+
+local function playEmote()
+    local animation = Instance.new("Animation")
+    animation.AnimationId = "rbxassetid://"..tostring(emoteId)
+    local loadedAnimation = humanoid:LoadAnimation(animation)
+    loadedAnimation:Play()
+end
+
+playEmote()
+local humanoid = game.Players.LocalPlayer.Character:WaitForChild("Humanoid")
+local emoteId = 10714360343
+
+local function playEmote()
+    local animation = Instance.new("Animation")
+    animation.AnimationId = "rbxassetid://"..tostring(emoteId)
+    local loadedAnimation = humanoid:LoadAnimation(animation)
+    loadedAnimation:Play()
+end
+
+playEmote()
+local Humanoid = game.Players.LocalPlayer.Character:WaitForChild("Humanoid")
+
+Humanoid.AutoRotate = false
+
+while true do
+    local rotationAngle = math.rad(math.random(0, 360)) -- Random rotation angle between 0 and 360 degrees
+    Humanoid.Parent.HumanoidRootPart.CFrame = Humanoid.Parent.HumanoidRootPart.CFrame * CFrame.Angles(0, rotationAngle, 0)
+    wait(0.1) -- Adjust the time between rotations here
+
+    if game:GetService("UserInputService"):GetFocusedTextBox() == nil then
+        if Humanoid:GetState() == Enum.HumanoidStateType.None then
+            Humanoid.AutoRotate = true
+        else
+            Humanoid.AutoRotate = false
+        end
+    end
+end
