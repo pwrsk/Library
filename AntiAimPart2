@@ -1,0 +1,23 @@
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
+
+local speed = -7
+
+humanoid.Died:Connect(function()
+    script:Destroy()
+end)
+
+while true do
+    local rootPart = character.PrimaryPart or character:WaitForChild("HumanoidRootPart")
+    rootPart.CFrame = rootPart.CFrame * CFrame.Angles(0, math.rad(speed), 0)
+    wait(1/30)
+
+    if game:GetService("UserInputService"):GetFocusedTextBox() == nil then
+        if humanoid:GetState() == Enum.HumanoidStateType.None then
+            humanoid.AutoRotate = true
+        else
+            humanoid.AutoRotate = false
+        end
+    end
+end
