@@ -21,4 +21,3 @@ while true do
         end
     end
 end
-wait(3)
